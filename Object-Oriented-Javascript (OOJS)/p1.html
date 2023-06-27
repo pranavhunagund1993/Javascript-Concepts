@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented JavaScript (OOJS)</title>
+</head>
+<body>
+    <h1>Objects</h1>
+
+    <script>
+        var x = 23;
+
+        var car = {
+            // key: value => property of an object
+            model: 2022,
+            color: "red",
+            brand: "etios",
+            company: "toyota",
+            isRunnable: true,
+            speed: () => {
+                return "20Kms max speed"
+            }
+        };
+
+        console.log('Car =', car);
+
+        document.write(`<h3> var x = ${x} </h3>`);
+        document.write(`<h3> object = ${car} </h3>`); // object cannot be destructure [object Object]
+
+        document.write(`<h3> car model = ${car.model} </h3>`);
+        document.write(`<h3> car color = ${car.color} </h3>`);  // object.key
+        document.write(`<h3> car brand = ${car.brand} </h3>`);  // object['key']
+        document.write(`<h3> car company = ${car.company} </h3>`);
+        document.write(`<h3> car speed = ${car.speed()} </h3>`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented JavaScript (OOJS)</title>
+</head>
+<body>
+    <h3>Entries to object conversion</h3>
+
+    <script>
+        const userEntry = new Map([
+            ["name", "John"],
+            ["email", "john@gmail.com"],
+            ["age", 30]
+        ]);
+
+        console.log("entries =", userEntry);
+
+        // convert entries into object
+        const userObject = Object.fromEntries(userEntry);
+
+        console.log("Object user =", userObject);
+    </script>
+</body>
+</html>

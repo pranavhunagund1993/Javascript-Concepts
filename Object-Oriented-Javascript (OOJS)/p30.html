@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented JavaScript (OOJS)</title>
+</head>
+<body>
+    <h3>super key</h3>
+
+    <script>
+        // super class 
+        class Materials {
+            constructor(x,y) {
+                this.bric = x;
+                this.cement = y;
+            }
+
+            getMaterialInfo() {
+                return `Material info brics = ${this.bric} and cement = ${this.cement}`;
+            }
+        }
+
+        // base class
+        class Building extends Materials {
+            constructor(a,b,c) {
+                super(a,b);     // a = x, b = y
+                this.sand = c;  // own property of base class
+            }
+
+            getMaterialInfo() {
+                document.write(`<h1> ${super.getMaterialInfo() } </h1>`)
+                return `The sand info = ${this.sand} loads`;
+            }
+        }
+
+        let p = new Building(300,20,2);
+
+        document.write(`<h1> ${ p.getMaterialInfo() } </h1>`);
+    </script>
+</body>
+</html>

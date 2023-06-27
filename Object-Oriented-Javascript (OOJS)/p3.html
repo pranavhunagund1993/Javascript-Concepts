@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented JavaScript (OOJS)</title>
+</head>
+<body>
+    <h3>Object.create() Method</h3>
+
+    <script>
+        // Object Constructor
+        // Object.create() => copy or clone one object prototype in another object
+
+        const user = {
+            name: "Raj",
+            email: "raj@gmail.com",
+            mobile: "9874563215",
+            age: 25
+        };
+
+        console.log("user =", user);
+
+        const user1 = Object.create(user);
+
+        console.log('user1 =', user1);
+    </script>
+</body>
+</html>

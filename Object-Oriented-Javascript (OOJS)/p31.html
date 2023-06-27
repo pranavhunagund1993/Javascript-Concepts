@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented JavaScript (OOJS)</title>
+</head>
+<body>
+    <script>
+        class Company {
+            constructor(x,y) {
+                this.empId = x;
+                this.empDes = y;
+            }
+
+            getEmpInfo() {
+                return `Employee id = ${this.empId} and Designation = ${this.empDes}`;
+            }
+        }
+
+        class Emp extends Company {
+            constructor(na,em,id,de) {
+                super(id,de);
+                // own property of base class
+                this.name = na;
+                this.email = em;
+            }
+
+            getEmpInfo() {
+                document.write(`<h2> ${ super.getEmpInfo() } </h2>`)
+                return `Name = ${this.name} and Email = ${this.email}`;
+            }
+        }
+
+        let empDetails = new Emp("Pranav", "pranav@gmail.com", 100, "MERN Stack Developer");
+        document.write(`<h2> ${ empDetails.getEmpInfo() } </h2>`)
+    </script>
+</body>
+</html>

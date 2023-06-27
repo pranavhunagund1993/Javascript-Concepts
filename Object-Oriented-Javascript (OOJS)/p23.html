@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented JavaScript (OOJS)</title>
+</head>
+<body>
+    <h3>Class ES-6 => group of objects (state and behaivour)</h3>
+    <p>State => variables => properties</p>
+    <p>Behaivour => methods</p>
+
+    <script>
+        class User {
+            // Built in method
+            constructor() {
+                this.name = "Mohan",
+                this.email = "mohan@gmail.com",
+                document.write(`<h1> Constructor method </h1>`);
+            }
+
+            display() {
+                document.write(`<h3> name is ${this.name} </h3>`)
+            }
+
+            print() {
+                document.write(`<h3> email is ${this.email} </h3>`)
+            }
+        }
+
+        // create an instance to constructor
+        let x = new User();
+
+        console.log('x =', x);
+        document.write(`<h3> name is ${x.name} </h3>`);
+        document.write(`<h3> email is ${x.email} </h3>`);
+
+        x.display();
+        x.print();
+
+    </script>
+</body>
+</html>

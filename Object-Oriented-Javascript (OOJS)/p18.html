@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented JavaScript (OOJS)</title>
+</head>
+<body>
+    <h1>Accessor properties (get and set)</h1>
+    <p>Consider we have 2 functions inside an object, one to set the value and another to get the value from it</p>
+
+    <script>
+        const user = {
+            firstName: "John",
+            lastName: "Mathew",
+            email: "john@gmail.com"
+        };
+
+        Object.defineProperty(user, "fullName", {
+            get: function () {
+                return this.firstName + " " + this.lastName;
+            },
+            set: function (value) {
+                [this.firstName, this.lastName] = value.split(" ");
+            }
+        });
+
+        console.log("fullName =", user.fullName);
+
+        user.lastName = "David";
+
+        console.log("fullName =", user.fullName);
+
+        user.firstName = "Andrew";
+
+        console.log("fullName =", user.fullName);
+
+    </script>
+</body>
+</html>

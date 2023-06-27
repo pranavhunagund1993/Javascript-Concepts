@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented JavaScript (OOJS)</title>
+</head>
+<body>
+    <h3>Object.defineProperties() method</h3>
+
+    <script>
+        // Object.defineProperties(object, {key: }, {value: xx}) => It will allow us to add more than one set of properties in an object externally
+        
+        const user = {
+            name: "Ramesh"
+        };
+
+        console.log("Before defineProperties =", user);
+
+        Object.defineProperties(user, {
+            email: {
+                value: "ramesh@gmail.com"
+            },
+            age: {
+                value: 30
+            },
+            mobile: {
+                value: "753159486426"
+            }
+        });
+
+        console.log("After defineProperties =", user);
+    </script>
+</body>
+</html>

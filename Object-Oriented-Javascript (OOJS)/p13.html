@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented JavaScript (OOJS)</title>
+</head>
+<body>
+    <h3>Protect the values using writable and readable properties</h3>
+
+    <script>
+        let user = {
+            email: "john@gmail.com"
+        };
+
+        Object.defineProperty(user, "name", {
+            value: "John",
+            writable: false     // true => writable, false => readable (default)
+        });
+
+        console.log("Before name =", user);
+
+        user.name = "Mohan";
+        user.email = "mohan@gmail.com";
+        user.age = 25;
+
+        console.log("After name =", user);
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented JavaScript (OOJS)</title>
+</head>
+<body>
+    <h3>Object.defineProperty() method</h3>
+
+    <script>
+        // Object.defineProperty(object, key, {value: xx}) => It is used to create properties in an object externally
+
+        let user = {
+            name: "John"
+        };
+
+        console.log("Before user =", user);
+
+        Object.defineProperty(user, "email", {
+            value: "john@gmail.com"
+        });
+
+        Object.defineProperty(user, "age", {
+            value: 32
+        });
+
+        console.log("After user =", user);
+    </script>
+</body>
+</html>

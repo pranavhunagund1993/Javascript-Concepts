@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented JavaScript (OOJS)</title>
+</head>
+<body>
+    <h1>get and set methods</h1>
+
+    <script>
+        class Car {
+            constructor() {
+                this.title = "";
+            }
+
+            // get method to return the value
+            get title() {
+                return `My Car name is ${this._name}`;      // _name => alias property to title
+            }
+
+            // set method to assign the value
+            set title(x) {
+                this._name = x;
+            }
+        }
+
+        let x = new Car();
+        console.log("x =", x);
+
+        x.title = "Mahinder Thar";
+        document.write(`<h1> ${x.title} </h1>`);
+    </script>
+</body>
+</html>

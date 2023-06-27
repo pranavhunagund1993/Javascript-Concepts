@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented JavaScript (OOJS)</title>
+</head>
+<body>
+    <h1>Inheritance inside class (Non Parameter super class)</h1>
+
+    <script>
+        // Non Parameter super class
+        class Course {
+            constructor() {
+                this.title = "JavaScript";
+                this.fee = 12345;
+            }
+
+            getCourseDetails() {
+                document.write(`<h1> course name = ${this.title} and fee = ${this.fee} </h1>`)
+            }
+        }
+
+        // base class
+        class User extends Course {
+            constructor(x,y) {
+                super(x,y);     // super method call refer to super class constructor
+            }
+        }
+
+        let x = new User();
+        x.getCourseDetails();
+    </script>
+</body>
+</html>

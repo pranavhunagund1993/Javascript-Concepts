@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented JavaScript (OOJS)</title>
+</head>
+<body>
+    <h1>Private members inside the class (Encapsulation)</h1>
+
+    <script>
+        class Company {
+            constructor() {
+                const emp = [];
+
+                // setter method
+                this.addEmp = function(val) {
+                    emp.push(val);
+                    return emp;
+                }
+
+                // getter method
+                this.getEmp = function() {
+                    return emp.shift();
+                }
+            }
+        }
+
+        let x = new Company();
+
+        console.log("instance x =", x);
+
+        // public members to add value
+        x.addEmp("John");
+        x.addEmp("Robert");
+        x.addEmp("Micheal");
+
+        // public members to read the values
+        console.log('first =', x.getEmp());
+        console.log('second =', x.getEmp());
+        console.log('third =', x.getEmp());
+    </script>
+</body>
+</html>

@@ -42,5 +42,5 @@ console.log(z);
 
 // LOOPING OVER MAPS
 for(let [key, value] of customerMap) {
-    console.log(`${key} : ${value}`);
+    console.log(`value for key ${key} is ${value}`);
 }

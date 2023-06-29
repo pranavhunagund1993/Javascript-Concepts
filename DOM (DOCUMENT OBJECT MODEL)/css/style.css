@@ -25,6 +25,17 @@
     border: 3px solid #123;
 }
 
+.form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form > h2 {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
 input[type=text], [type=email], select {
     width: 100%;
     padding: 12px 20px;
@@ -35,7 +46,7 @@ input[type=text], [type=email], select {
     box-sizing: border-box;
 }
 
-input[type=button] {
+input[type=submit] {
     width: 100%;
     background-color: #4caf50;
     color: white;

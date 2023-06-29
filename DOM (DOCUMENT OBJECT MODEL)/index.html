@@ -39,11 +39,53 @@
                 <li>Removing existing DOM element</li>
             </ul>
         </div>
+
+        <!-- HTML Form starts here -->
+        <div class="form">
+            <h2>Registration Form</h2>
+            <form>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your First Name..." value="John">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your Last Name..." value="Smith">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email..." value="johnsmith@gmail.com">
+
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="india">India</option>
+                    <option value="cannada" selected>Cannada</option>
+                    <option value="usa">USA</option>
+                    <option value="australia">Australia</option>
+                </select>
+
+                <label for="gender">Gender</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" checked>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+                <br><br>
+
+                <label>Hobbies <i>(optional)</i></label>
+                <div class="form-inline">
+                    <label><input type="checkbox" name="hobbies[]" value="sports" checked>Sports</label>
+                    <label><input type="checkbox" name="hobbies[]" value="movies" checked>Movies</label>
+                    <label><input type="checkbox" name="hobbies[]" value="music" checked>Music</label>
+                </div>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </div>
 
     <!-- DOM - DOCUMENT OBJECT MODEL -->
     <!-- <script src="./js/domIntro.js"></script> -->
     <!-- <script src="./js/accessingAndModifying.js"></script> -->
-    <script src="./js/changingStyleAndAtrribute.js"></script>
+    <!-- <script src="./js/changingStyleAndAtrribute.js"></script> -->
+    <script src="./js/collectiongFormData.js"></script>
 </body>
 </html>

@@ -1,0 +1,102 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 200px;
+    padding: 20px 40px;
+    background-color: lightseagreen;
+}
+
+.container {
+    padding: 10px 40px;
+    margin: 10px 10px;
+}
+
+.list {
+    margin: 20px 10px;
+}
+
+.dynamic {
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+    border: 3px solid #123;
+}
+
+input[type=text], [type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=button] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.form, .card {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.card {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.emp-details {
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+.emp-name {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.emp-role {
+    font-size: 14px;
+}
+
+.div.remove-card {
+    float: right;
+}
+
+.remove-card {
+    border: none;
+}
+
+.add-new-employee {
+    background-color: #f2f2f2;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#create {
+    background-color: #1abc9c;
+}
+
+.dynamic {
+    padding: 10px 10px;
+    border: 3px solid #ccc;
+    background-color: #eee;
+}

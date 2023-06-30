@@ -42,10 +42,10 @@
 
         <!-- HTML Form starts here -->
         <div class="form">
-            <h2>Registration Form</h2>
+            <h2 id="registration">Registration Form</h2>
             <form>
                 <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your First Name..." value="John">
+                <input type="text" id="fname" name="firstname" placeholder="Your First Name..." value="John" onfocus="this.style.backgroundColor = 'yellow'" onblur="this.style.backgroundColor = 'white'">
 
                 <label for="lname">Last Name</label>
                 <input type="text" id="lname" name="lastname" placeholder="Your Last Name..." value="Smith">
@@ -77,7 +77,7 @@
                     <label><input type="checkbox" name="hobbies[]" value="music" checked>Music</label>
                 </div>
 
-                <input type="submit" value="Submit">
+                <input type="button" value="Submit" id="btn">
             </form>
         </div>
     </div>
@@ -86,6 +86,8 @@
     <!-- <script src="./js/domIntro.js"></script> -->
     <!-- <script src="./js/accessingAndModifying.js"></script> -->
     <!-- <script src="./js/changingStyleAndAtrribute.js"></script> -->
-    <script src="./js/collectiongFormData.js"></script>
+    <!-- <script src="./js/collectiongFormData.js"></script> -->
+    <!-- <script src="./js/eventsAndEventHandler.js"></script> -->
+    <script src="./js/addEventListener.js"></script>
 </body>
 </html>

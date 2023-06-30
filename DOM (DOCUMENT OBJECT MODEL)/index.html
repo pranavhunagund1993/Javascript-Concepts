@@ -10,6 +10,10 @@
 <body>
     <div class="header" id="head">
         <h1>JAVASCRIPT DOM AND DOM MANIPULATION</h1>
+        <div class="modal-buttons">
+            <button class="btn btn-alert" id="btn-alert">Alert</button>
+            <button class="btn btn-prompt" id="btn-prompt">Prompt</button>
+        </div>
     </div>
     <div class="container">
         <!-- Image element -->
@@ -80,6 +84,30 @@
                 <input type="button" value="Submit" id="btn">
             </form>
         </div>
+
+        <!-- HTML for Alert Modal window -->
+        <div class="alert hidden">
+            <h2>This is an Alert!</h2>
+            <p>
+                This is a very simple example of how a custom alert window can be created and displayed dynamically using javascript.
+            </p>
+            <button id="alertOk">OK</button>
+        </div>
+
+        <div class="overlay hidden"></div>
+
+        <!-- HTML for Prompt Modal window -->
+        <div class="prompt hidden">
+            <h2>This is a Prompt</h2>
+            <p>
+                Please Enter Your Page
+            </p>
+            <input type="text" id="input">
+            <button class="modal-btn" id="promptCancel">Cancel</button>
+            <button class="modal-btn" id="promptOk">OK</button>
+        </div>
+
+        <div class="overlay hidden"></div>
     </div>
 
     <!-- DOM - DOCUMENT OBJECT MODEL -->
@@ -89,6 +117,8 @@
     <!-- <script src="./js/collectiongFormData.js"></script> -->
     <!-- <script src="./js/eventsAndEventHandler.js"></script> -->
     <!-- <script src="./js/addEventListener.js"></script> -->
-    <script src="./js/modalWindow.js"></script>
+    <!-- <script src="./js/modalWindow.js"></script> -->
+    <!-- <script src="./js/customModelWindowAlert.js"></script> -->
+    <script src="./js//customModalWindowPrompt.js"></script>
 </body>
 </html>

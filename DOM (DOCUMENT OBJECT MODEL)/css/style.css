@@ -181,3 +181,9 @@ input[type=submit]:hover {
     float: right;
     margin: 5px;
 }
+
+.impor-update {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}

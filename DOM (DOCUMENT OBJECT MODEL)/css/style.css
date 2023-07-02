@@ -187,3 +187,44 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 20px;
 }
+
+/* Student Details card */
+.student-list {
+    margin-top: 30px;
+}
+
+.card {
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 10px 10px;
+    margin: 10px 0px;
+}
+
+.student-details {
+    margin: 0px 10px;
+    width: 90%;
+}
+
+.std-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.std-country {
+    font-weight: bold;
+    color: mediumseagreen;
+}
+
+.div-remove-card {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+}
+
+.remove-card {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+

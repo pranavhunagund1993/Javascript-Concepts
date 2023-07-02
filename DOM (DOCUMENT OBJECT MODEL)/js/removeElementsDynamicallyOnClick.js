@@ -1,5 +1,7 @@
 // ADDING ELEMENTS DYNAMICALLY ON CLICK
 
+// WE CANNOT ADD SAME EVENT LISTENER ON THE SAME ELEMENT MULTIPLE TIMES.
+
 // 1. CREATE A DIV AND ADD IT TO WEBPAGE
 let div = document.createElement('div');
 div.classList.add('student-list');
@@ -10,6 +12,8 @@ containerDiv.appendChild(div);
 // 2. ADD EVENT LISTENER ON SUBMIT BUTTON
 let submitBtn = document.getElementById('btn');
 submitBtn.addEventListener('click', displayStudentDetail);
+
+let i =0;
 
 // 3. CREATE displayStudentDetail FUNCTION
 function displayStudentDetail() {
@@ -31,10 +35,21 @@ function displayStudentDetail() {
                         <div class="std-country">${country}</div>
                     </div>
                     <div class="div-remove-card">
-                        <button class="remove-card">X</button>
+                        <button class="remove-card" id="remove-card-${i}">X</button>
                     </div>
-                </div>`
+                </div>`;
     // div.insertAdjacentElement('beforeend', html);
     div.innerHTML += html;
+
+    document.querySelector('#remove-card-'+ i)
+    .addEventListener('click', function() {
+        let confrm = confirm('Do you really want to delete this student?');
+        // console.log(this);
+        let removeEl = this.parentNode.parentNode;
+        // console.log(removeEl);
+        if(confrm) 
+            div.removeChild(removeEl);   
+    })
+    i++;
 }
 

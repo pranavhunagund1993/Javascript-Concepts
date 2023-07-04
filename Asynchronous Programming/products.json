@@ -1,0 +1,28 @@
+{
+    "arrayOfProducts": [
+        {
+            "imgUrl": "./images/nokia_laptop.webp",
+            "name": "Nokia Purebook X14 Core i5 10th Gen",
+            "price": 57000,
+            "Description": "Bring home the powerful and stylish Nokia PureBook X14 laptop and enjoy every detail in clear and vivid clarity. This laptop weighs just 1.1 kg, so you can easily take it along with you wherever you go. The 35.56 cm (14) Full HD LED-backlit IPS display with Dolby Vision makes it a delight to watch videos, movies, and more on it. What's more, this laptop is powered by an Intel Core i5 10th Gen processor and comes with Windows 10 pre-installed, offering a seamless computing experience."
+        },
+        {
+            "imgUrl": "./images/Asus_laptop.jpg",
+            "name": "ASUS ROG Zenphyrus G14 Ryzan 9 octs Core",
+            "price": 108990,
+            "Description": "Processor: AMD Ryzen 9 6900HS Mobile Processor (8-core/16-thread, 16MB cache, up to 4.9 GHz max boost.Play over 100 high-quality PC games, plus new and upcoming blockbusters on day one like Halo Infinite, Forza Horizon 5, and Age of Empires IV with your new G513RS-HQ024WS and one month of Game Pass-including EA Play."
+        },
+        {
+            "imgUrl": "./images/Asus_laptop_i5.webp",
+            "name": "ASUS Vivobook Gaming Core i5 9th Gen",
+            "price": 54990,
+            "Description": "Whether you’re a productivity beast or an invincible gaming champion, the ASUS F571GT Gaming Core laptop is an ideal device for you. Featuring a 9th Gen Intel Core i5 processor, this laptop can easily handle resource-intensive programs and games. The efficient dual-fan cleaning system ensures that the laptop’s performance is not hampered by thermal issues. Additionally, the laptop features ASUS SonicMaster technology that has been created in collaboration with Harman Kardon to create an improved audio experience."
+        },
+        {
+            "imgUrl": "./images/Acer_laptop.webp",
+            "name": "Acer Aspire 7 Ryzen 5 Quad Core 3550H",
+            "price": 50990,
+            "Description": "The Acer Aspire 7 is an elegant looking gaming laptop that comes with a powerful AMD Ryzen 5 quad-core 3550H processor and NVIDIA GTX series GPU that help it deliver a seamless and impressive performance. Its large 39.6 cm (15.6) FHD display comes with an 81.61% screen-to-body ratio so that you can have an immersive gaming experience. Boosting a storage capacity of 512 GB SSD, taking your favourite gaming titles, movies, and TV shows would not be an issue at all with the Aspire 7."
+        }
+    ]
+}

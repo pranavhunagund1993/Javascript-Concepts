@@ -1,0 +1,47 @@
+/* countries and card style */
+.countries {
+    display: flex;
+    font-size: 1rem;
+}
+
+.country {
+    background-color: #fff;
+    box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
+    font-size: 0.8rem;
+    width: 13rem;
+    height: 16rem;
+    border-radius: 0rem;
+    margin: 0.2rem 0.2rem;
+}
+
+.country_img {
+    width: 13rem;
+    height: 8rem;
+    object-fit: cover;
+    background-color: #eee;
+}
+
+.country_data {
+    padding: 0rem 0.2rem;
+}
+
+.country_name {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.country_region {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #888;
+}
+
+.country_row {
+    margin-bottom: 1rem;
+}
+
+.country_row span {
+    display: inline-block;
+    margin-right: 1rem;
+}

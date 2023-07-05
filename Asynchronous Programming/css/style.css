@@ -45,3 +45,14 @@
     display: inline-block;
     margin-right: 1rem;
 }
+
+#btn-load {
+    padding: 0.6rem 3rem;
+    border: none;
+    margin: 1rem;
+    font-size: 0.9rem;
+    border-radius: 0.2rem;
+    background-color: rgba(174, 202, 188, 0.514);
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
